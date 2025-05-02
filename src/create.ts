@@ -42,7 +42,7 @@ type tMovie = {
       // parameters: newMovieTitle: string, intGenreId: number
          
           
-          const response = await fetch("http://localhost:3000/movies", {
+          const response = await fetch("https://fanatical-ivy-glasses.glitch.me/movies", {
               method: "POST", // create
               headers: { "Content-Type": "application/json" }, // I recommend copy-pasting this
               body: JSON.stringify(testMovie) // Turns JS data into JSON data
@@ -90,7 +90,7 @@ export function getNewGenreData() {
       }
   
            
-           const response = await fetch("http://localhost:3000/genres", {
+           const response = await fetch("https://fanatical-ivy-glasses.glitch.me/genres", {
               method: "POST", // create
               headers: { "Content-Type": "application/json" }, // I recommend copy-pasting this
               body: JSON.stringify(newGenre) // Turns JS data into JSON data
@@ -143,7 +143,7 @@ type tReview = {
 async function onCreateReviewClick(testReview: tReview) {
     
           
-    const response = await fetch("http://localhost:3000/reviews", {
+    const response = await fetch("https://fanatical-ivy-glasses.glitch.me/reviews", {
         method: "POST", // create
         headers: { "Content-Type": "application/json" }, // I recommend copy-pasting this
         body: JSON.stringify(testReview) // Turns JS data into JSON data

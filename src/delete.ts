@@ -37,7 +37,7 @@ async function onDeleteMovieClick(intId: number) {
     // In this app we don't need the response and we don't need to wait
     // for the request to finish, but in a different app we might
     // Make sure the URL has the id of the item to delete on the end
-    fetch("http://localhost:3000/movies/" + intId, {
+    await fetch("https://fanatical-ivy-glasses.glitch.me/movies/" + intId, {
         method: "DELETE", // delete
     })
     fetchMoviesButton.click();
@@ -79,7 +79,7 @@ async function onDeleteGenreClick(intId: number) {
     // In this app we don't need the response and we don't need to wait
     // for the request to finish, but in a different app we might
     // Make sure the URL has the id of the item to delete on the end
-    fetch("http://localhost:3000/genres/" + intId, {
+    await fetch("https://fanatical-ivy-glasses.glitch.me/genres/" + intId, {
         method: "DELETE", // delete
     })
     fetchMoviesButton.click();
@@ -120,7 +120,7 @@ async function onDeleteReviewClick(intId: number) {
     // In this app we don't need the response and we don't need to wait
     // for the request to finish, but in a different app we might
     // Make sure the URL has the id of the item to delete on the end
-    fetch("http://localhost:3000/reviews/" + intId, {
+    await fetch("https://fanatical-ivy-glasses.glitch.me/reviews/" + intId, {
         method: "DELETE", // delete
     })
     fetchMoviesButton.click();

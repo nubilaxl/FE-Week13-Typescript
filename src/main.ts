@@ -91,7 +91,7 @@ async function onFetchMoviesClick() {
     genreId: number
 }
 
-    const response = await fetch("http://localhost:3000/movies")
+    const response = await fetch("https://fanatical-ivy-glasses.glitch.me/movies")
     const movieList = await response.json()
     // Maps the results received to the table elements
     tbody.innerHTML= movieList.map(
@@ -139,7 +139,7 @@ type Genre = {
 
 // Function to send request to retrieve all the genre db data
 async function onFetchGenresClick() {
-    const response = await fetch("http://localhost:3000/genres")
+    const response = await fetch("https://fanatical-ivy-glasses.glitch.me/genres")
     const genreList = await response.json()
 
     //Places the data in the table
@@ -164,7 +164,7 @@ type Review = {
 
 //Async function to get reviews from the server and place in the table body
 async function onFetchReviewsClick() {
-    const response = await fetch("http://localhost:3000/reviews")
+    const response = await fetch("https://fanatical-ivy-glasses.glitch.me/reviews")
     const reviewList = await response.json()
 
     reviewtbody.innerHTML= reviewList.map(
