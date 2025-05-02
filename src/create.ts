@@ -156,3 +156,4 @@ async function onCreateReviewClick(testReview: tReview) {
     fetchMoviesButton.click();
 
 }
+console.log(newlyCreatedItem);
