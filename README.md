@@ -4,7 +4,7 @@
 
 ## Live Demo URL
 
-Check out the application [Json-Data-API] () 
+Check out the application [Json-Data-API] (https://comfy-sfogliatella-d92e9e.netlify.app/) 
 Click Fetch to begin. Interact with the data by: creating a movie with a genre, deleting the movie via id, create a genre, delete a genre by id, create a review, and delete a review by id.
 
 ## Technologies used
